@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-04-09T09:45:31.012550+00:00",
+  "timestamp_utc": "2026-04-09T09:56:14.992983+00:00",
   "status": "success",
   "inputs": {
     "user_path": "/Users/stefanoroybisignano/Music/GarageBand/Eyes Without A Face - Verse/MyVerse01/09:04:26, 00.49-3.wav",
@@ -23,7 +23,17 @@
     "pitch_dtw_distance_total": 297327.7953959973,
     "dtw_warp_path_length": 5012,
     "vocal_stability_std": 67.6098296845863,
-    "voiced_aligned_frames": 3139
+    "voiced_aligned_frames": 3139,
+    "dynamics_rms_user_mean_db": -34.19448503892325,
+    "dynamics_rms_reference_mean_db": -27.71868054446276,
+    "dynamics_rms_mae_db": 15.615847484835223,
+    "dynamics_rms_corr": 0.3364763765622839,
+    "spectral_centroid_user_mean_hz": 2394.1248968230393,
+    "spectral_centroid_reference_mean_hz": 2816.0234281021985,
+    "spectral_centroid_gap_hz": 1483.4870478081714,
+    "hnr_user_mean_db": -3.2805329898808453,
+    "hnr_reference_mean_db": -0.08856278480966913,
+    "hnr_gap_db": 13.339720588362896
   },
   "files": {
     "summary_json": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/04_20260409_004900_09_04_26_00.49-3/summary.json",

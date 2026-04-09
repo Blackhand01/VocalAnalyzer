@@ -131,6 +131,34 @@ def build_performance_trend_explanation_html(attempts: list[dict[str, Any]]) -> 
         verdict_class = "bad"
         verdict_text = "Peggioramento o andamento misto"
 
+    extra_sections = ""
+    if "dynamics_rms_corr" in first_metrics and "dynamics_rms_corr" in last_metrics:
+        dynamics_delta = last_metrics["dynamics_rms_corr"] - first_metrics["dynamics_rms_corr"]
+        extra_sections += (
+            f"<p>Dynamics RMS Corr: <span class='mono'>{first_metrics['dynamics_rms_corr']:.3f} → "
+            f"{last_metrics['dynamics_rms_corr']:.3f}</span> (delta "
+            f"<span class='mono'>{format_delta(dynamics_delta)}</span>) | Valore perfetto atteso: "
+            "<span class='mono'>1.0</span></p>"
+        )
+    if "spectral_centroid_gap_hz" in first_metrics and "spectral_centroid_gap_hz" in last_metrics:
+        centroid_delta = (
+            last_metrics["spectral_centroid_gap_hz"] - first_metrics["spectral_centroid_gap_hz"]
+        )
+        extra_sections += (
+            f"<p>Spectral Centroid Gap: <span class='mono'>{first_metrics['spectral_centroid_gap_hz']:.2f} → "
+            f"{last_metrics['spectral_centroid_gap_hz']:.2f}</span> Hz (delta "
+            f"<span class='mono'>{format_delta(centroid_delta)}</span>) | Valore perfetto atteso: "
+            "<span class='mono'>0 Hz</span></p>"
+        )
+    if "hnr_gap_db" in first_metrics and "hnr_gap_db" in last_metrics:
+        hnr_delta = last_metrics["hnr_gap_db"] - first_metrics["hnr_gap_db"]
+        extra_sections += (
+            f"<p>HNR Gap: <span class='mono'>{first_metrics['hnr_gap_db']:.2f} → "
+            f"{last_metrics['hnr_gap_db']:.2f}</span> dB (delta "
+            f"<span class='mono'>{format_delta(hnr_delta)}</span>) | Valore perfetto atteso: "
+            "<span class='mono'>0 dB</span></p>"
+        )
+
     return (
         "<section class='card'>"
         "<h2>Lettura Miglioramento/Peggioramento</h2>"
@@ -150,6 +178,7 @@ def build_performance_trend_explanation_html(attempts: list[dict[str, Any]]) -> 
         f"<p>Vocal Stability Std: <span class='mono'>{first_metrics['vocal_stability_std']:.2f} → "
         f"{last_metrics['vocal_stability_std']:.2f}</span> (delta <span class='mono'>{format_delta(stability_delta)}</span>) "
         "| Valore atteso: <span class='mono'>più basso e stabile possibile</span></p>"
+        f"{extra_sections}"
         "<p>Nota: il giudizio principale usa Pitch Score, Timing Score e Avg Abs Cents.</p>"
         "</section>"
     )
@@ -207,6 +236,15 @@ def write_performance_trend_plot(output_html_path: Path, attempts: list[dict[str
             col=1,
         )
 
+    def add_series_if_present(row_number: int, metric_label: str, metric_key: str) -> None:
+        if not all(metric_key in attempt.get("metrics", {}) for attempt in attempts):
+            return
+        add_series(
+            row_number=row_number,
+            metric_label=metric_label,
+            metric_values=[float(a["metrics"][metric_key]) for a in attempts],
+        )
+
     add_series(1, "Pitch Score", [a["metrics"]["pitch_score"] for a in attempts])
     add_series(1, "Timing Score", [a["metrics"]["timing_score"] for a in attempts])
     add_series(2, "Avg Abs Cents", [a["metrics"]["avg_abs_cents"] for a in attempts])
@@ -216,6 +254,9 @@ def write_performance_trend_plot(output_html_path: Path, attempts: list[dict[str
         [a["metrics"]["warping_path_rms_deviation"] for a in attempts],
     )
     add_series(4, "Vocal Stability Std", [a["metrics"]["vocal_stability_std"] for a in attempts])
+    add_series_if_present(2, "Spectral Centroid Gap (Hz)", "spectral_centroid_gap_hz")
+    add_series_if_present(3, "HNR Gap (dB)", "hnr_gap_db")
+    add_series_if_present(4, "Dynamics RMS Corr", "dynamics_rms_corr")
 
     figure.update_layout(
         title="Chronological Vocal Performance Trend",

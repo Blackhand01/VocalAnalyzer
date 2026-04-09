@@ -36,6 +36,7 @@ from .visualization import (
     write_performance_trend_plot,
     write_pitch_alignment_plot,
 )
+from .voice_quality import compute_voice_quality_frames, summarize_aligned_voice_quality
 
 
 class VocalAnalyzer:
@@ -138,6 +139,24 @@ class VocalAnalyzer:
                 user_frame_count=user_pitch_track["f0_raw"].shape[0],
                 ref_frame_count=reference_pitch_track["f0_raw"].shape[0],
             )
+            user_voice_quality_frames = compute_voice_quality_frames(
+                signal=user_analysis_signal,
+                sample_rate=self.sr,
+                hop_length=self.hop_length,
+            )
+            reference_voice_quality_frames = compute_voice_quality_frames(
+                signal=reference_audio.signal,
+                sample_rate=self.sr,
+                hop_length=self.hop_length,
+            )
+            voice_quality_metrics = summarize_aligned_voice_quality(
+                user_quality_frames=user_voice_quality_frames,
+                reference_quality_frames=reference_voice_quality_frames,
+                idx_user=idx_user,
+                idx_reference=idx_reference,
+                user_pitch_frame_count=user_pitch_track["f0_raw"].shape[0],
+                reference_pitch_frame_count=reference_pitch_track["f0_raw"].shape[0],
+            )
 
             user_cents_for_stability = aligned_user_cents[voiced_valid_mask]
             if user_cents_for_stability.size <= 1:
@@ -170,6 +189,7 @@ class VocalAnalyzer:
                         "dtw_warp_path_length": alignment["path_length"],
                         "vocal_stability_std": stability_std,
                         "voiced_aligned_frames": int(np.sum(voiced_valid_mask)),
+                        **voice_quality_metrics,
                     },
                     "files": {
                         "summary_json": str(summary_path),

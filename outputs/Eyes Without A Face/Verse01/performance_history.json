@@ -1,5 +1,5 @@
 {
-  "timestamp_utc": "2026-04-09T09:44:34.985985+00:00",
+  "timestamp_utc": "2026-04-09T09:55:19.598361+00:00",
   "status": "success",
   "reference_path": "/Users/stefanoroybisignano/Music/GarageBand/Eyes Without A Face - Verse/Verse01.wav",
   "output_dir": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01",
@@ -26,7 +26,17 @@
         "pitch_dtw_distance_total": 598898.8798196336,
         "dtw_warp_path_length": 5228,
         "vocal_stability_std": 109.92517995267272,
-        "voiced_aligned_frames": 2410
+        "voiced_aligned_frames": 2410,
+        "dynamics_rms_user_mean_db": -37.32244430868883,
+        "dynamics_rms_reference_mean_db": -26.641132496656493,
+        "dynamics_rms_mae_db": 23.01764104196655,
+        "dynamics_rms_corr": -0.021493018942803047,
+        "spectral_centroid_user_mean_hz": 1567.4472921170138,
+        "spectral_centroid_reference_mean_hz": 2842.663723191809,
+        "spectral_centroid_gap_hz": 1997.536432035836,
+        "hnr_user_mean_db": -2.5817476301166087,
+        "hnr_reference_mean_db": -3.7346970736610654,
+        "hnr_gap_db": 16.700837795355444
       },
       "files": {
         "summary_json": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/01_20260408_004900_08_04_26_00.49/summary.json",
@@ -55,7 +65,17 @@
         "pitch_dtw_distance_total": 369565.80156155967,
         "dtw_warp_path_length": 5059,
         "vocal_stability_std": 82.21623154359573,
-        "voiced_aligned_frames": 2790
+        "voiced_aligned_frames": 2790,
+        "dynamics_rms_user_mean_db": -43.46019808099449,
+        "dynamics_rms_reference_mean_db": -26.237733700502105,
+        "dynamics_rms_mae_db": 24.9783610296617,
+        "dynamics_rms_corr": 0.16338655989968706,
+        "spectral_centroid_user_mean_hz": 2434.469881138961,
+        "spectral_centroid_reference_mean_hz": 2663.534676466374,
+        "spectral_centroid_gap_hz": 1593.4726206115984,
+        "hnr_user_mean_db": -5.133213529215975,
+        "hnr_reference_mean_db": -0.8899850018164747,
+        "hnr_gap_db": 14.993974047784688
       },
       "files": {
         "summary_json": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/02_20260409_004900_09_04_26_00.49-1/summary.json",
@@ -90,7 +110,17 @@
         "pitch_dtw_distance_total": 406439.4711094502,
         "dtw_warp_path_length": 5155,
         "vocal_stability_std": 63.614515116268905,
-        "voiced_aligned_frames": 2973
+        "voiced_aligned_frames": 2973,
+        "dynamics_rms_user_mean_db": -39.724894749505445,
+        "dynamics_rms_reference_mean_db": -26.04680330774139,
+        "dynamics_rms_mae_db": 23.01682063601297,
+        "dynamics_rms_corr": 0.08147261188898122,
+        "spectral_centroid_user_mean_hz": 2194.6561575376936,
+        "spectral_centroid_reference_mean_hz": 2984.2350701895416,
+        "spectral_centroid_gap_hz": 1803.9032119780202,
+        "hnr_user_mean_db": -2.568790262235823,
+        "hnr_reference_mean_db": -1.6529205598730448,
+        "hnr_gap_db": 15.116074099019926
       },
       "files": {
         "summary_json": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/03_20260409_004900_09_04_26_00.49-2/summary.json",
@@ -125,7 +155,17 @@
         "pitch_dtw_distance_total": 297327.7953959973,
         "dtw_warp_path_length": 5012,
         "vocal_stability_std": 67.6098296845863,
-        "voiced_aligned_frames": 3139
+        "voiced_aligned_frames": 3139,
+        "dynamics_rms_user_mean_db": -34.19448503892325,
+        "dynamics_rms_reference_mean_db": -27.71868054446276,
+        "dynamics_rms_mae_db": 15.615847484835223,
+        "dynamics_rms_corr": 0.3364763765622839,
+        "spectral_centroid_user_mean_hz": 2394.1248968230393,
+        "spectral_centroid_reference_mean_hz": 2816.0234281021985,
+        "spectral_centroid_gap_hz": 1483.4870478081714,
+        "hnr_user_mean_db": -3.2805329898808453,
+        "hnr_reference_mean_db": -0.08856278480966913,
+        "hnr_gap_db": 13.339720588362896
       },
       "files": {
         "summary_json": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/04_20260409_004900_09_04_26_00.49-3/summary.json",

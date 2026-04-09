@@ -42,3 +42,24 @@ open "${latest_take}pitch_alignment.html"
 # tutti i pitch_alignment dei take
 find "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/" -type f -name "pitch_alignment.html" -exec open "{}" \;
 ```
+
+## Voice Quality Metrics (v1.2)
+
+`summary.json` now includes 3 additional sensor groups to evaluate *how* you sing:
+
+- `dynamics_rms_*`:
+  - `dynamics_rms_corr` (target `1.0`): similarity of loudness envelope vs reference.
+  - `dynamics_rms_mae_db` (target `0`): average loudness gap in dB.
+- `spectral_centroid_*`:
+  - `spectral_centroid_gap_hz` (target `0`): timbre brightness distance from reference.
+- `hnr_*`:
+  - `hnr_gap_db` (target `0`): harmonic/noise quality distance from reference.
+
+In `performance_trend.html`, these appear as extra optional traces when present.
+
+## Human Note (recommended)
+
+Track a manual `RPE` (Rate of Perceived Exertion, 1-10) after each take in your notes:
+
+- High scores + low RPE = healthy progress.
+- High scores + high RPE = likely over-effort; review technique/recovery.
