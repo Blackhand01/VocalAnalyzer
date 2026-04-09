@@ -1,0 +1,66 @@
+{
+  "timestamp_utc": "2026-04-08T22:57:45.743776+00:00",
+  "status": "success",
+  "inputs": {
+    "user_path": "/Users/stefanoroybisignano/Music/GarageBand/Eyes Without A Face - Verse/MyVerse01/09:04:26, 00.49.wav",
+    "reference_path": "/Users/stefanoroybisignano/Music/GarageBand/Eyes Without A Face - Verse/Verse01.wav"
+  },
+  "output_dir": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/03_20260409_005656_09_04_26_00.49",
+  "config": {
+    "sample_rate": 22050,
+    "fmin_hz": 60.0,
+    "fmax_hz": 500.0,
+    "hop_length": 256
+  },
+  "metrics": {
+    "pitch_score": 57.84184184184185,
+    "avg_abs_cents": 47.94234234234234,
+    "timing_score": 96.90502862249902,
+    "warping_path_mean_deviation": 0.022267591248312034,
+    "warping_path_rms_deviation": 0.03094971377500991,
+    "warping_path_max_deviation": 0.09431939978563772,
+    "pitch_dtw_distance_normalized": 73.18774569929795,
+    "pitch_dtw_distance_total": 369085.80156155955,
+    "dtw_warp_path_length": 5043,
+    "vocal_stability_std": 82.43559388216549,
+    "voiced_aligned_frames": 2775
+  },
+  "files": {
+    "summary_json": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/03_20260409_005656_09_04_26_00.49/summary.json",
+    "pitch_alignment_html": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/03_20260409_005656_09_04_26_00.49/pitch_alignment.html"
+  },
+  "audio_metadata": {
+    "user": {
+      "path": "/Users/stefanoroybisignano/Music/GarageBand/Eyes Without A Face - Verse/MyVerse01/09:04:26, 00.49.wav",
+      "original_sample_rate": 44100,
+      "processed_sample_rate": 22050,
+      "original_channels": 2,
+      "original_frames": 12105450,
+      "original_duration_sec": 274.5,
+      "processed_samples": 6052725,
+      "processed_duration_sec": 274.5
+    },
+    "user_analysis_segment": {
+      "selection_method": "auto_reference_window",
+      "start_sample": 2048,
+      "end_sample": 718673,
+      "start_sec": 0.09287981859410431,
+      "end_sec": 32.592879818594106,
+      "duration_sec": 32.5,
+      "search_hop_length": 1024,
+      "match_strength": 0.8337690966927058
+    },
+    "reference": {
+      "path": "/Users/stefanoroybisignano/Music/GarageBand/Eyes Without A Face - Verse/Verse01.wav",
+      "original_sample_rate": 44100,
+      "processed_sample_rate": 22050,
+      "original_channels": 2,
+      "original_frames": 1433250,
+      "original_duration_sec": 32.5,
+      "processed_samples": 716625,
+      "processed_duration_sec": 32.5
+    },
+    "user_pitch_frames": 2800,
+    "reference_pitch_frames": 2800
+  }
+}

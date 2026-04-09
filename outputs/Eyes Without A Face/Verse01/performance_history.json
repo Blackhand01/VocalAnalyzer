@@ -1,0 +1,154 @@
+{
+  "timestamp_utc": "2026-04-09T09:44:34.985985+00:00",
+  "status": "success",
+  "reference_path": "/Users/stefanoroybisignano/Music/GarageBand/Eyes Without A Face - Verse/Verse01.wav",
+  "output_dir": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01",
+  "attempts": [
+    {
+      "attempt_index": 1,
+      "take_name": "08:04:26, 00.49.wav",
+      "user_path": "/Users/stefanoroybisignano/Music/GarageBand/Eyes Without A Face - Verse/MyVerse01/08:04:26, 00.49.wav",
+      "attempt_time_local": "2026-04-08T00:49:00+02:00",
+      "attempt_time_utc": "2026-04-07T22:49:00+00:00",
+      "attempt_time_source": "filename",
+      "file_mtime_local": "2026-04-08T00:50:39.517642+02:00",
+      "file_mtime_utc": "2026-04-07T22:50:39.517642+00:00",
+      "status": "success",
+      "output_dir": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/01_20260408_004900_08_04_26_00.49",
+      "metrics": {
+        "pitch_score": 18.50622406639006,
+        "avg_abs_cents": 83.34439834024894,
+        "timing_score": 88.11641654621909,
+        "warping_path_mean_deviation": 0.0985249786013222,
+        "warping_path_rms_deviation": 0.11883583453780923,
+        "warping_path_max_deviation": 0.23465707337379682,
+        "pitch_dtw_distance_normalized": 114.55602138860627,
+        "pitch_dtw_distance_total": 598898.8798196336,
+        "dtw_warp_path_length": 5228,
+        "vocal_stability_std": 109.92517995267272,
+        "voiced_aligned_frames": 2410
+      },
+      "files": {
+        "summary_json": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/01_20260408_004900_08_04_26_00.49/summary.json",
+        "pitch_alignment_html": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/01_20260408_004900_08_04_26_00.49/pitch_alignment.html"
+      }
+    },
+    {
+      "attempt_index": 2,
+      "take_name": "09:04:26, 00.49-1.wav",
+      "user_path": "/Users/stefanoroybisignano/Music/GarageBand/Eyes Without A Face - Verse/MyVerse01/09:04:26, 00.49-1.wav",
+      "attempt_time_local": "2026-04-09T00:49:00+02:00",
+      "attempt_time_utc": "2026-04-08T22:49:00+00:00",
+      "attempt_time_source": "filename",
+      "file_mtime_local": "2026-04-09T00:59:30.066795+02:00",
+      "file_mtime_utc": "2026-04-08T22:59:30.066795+00:00",
+      "status": "success",
+      "output_dir": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/02_20260409_004900_09_04_26_00.49-1",
+      "metrics": {
+        "pitch_score": 58.088410991636806,
+        "avg_abs_cents": 47.72043010752687,
+        "timing_score": 96.97383742764842,
+        "warping_path_mean_deviation": 0.022019130948927747,
+        "warping_path_rms_deviation": 0.030261625723515827,
+        "warping_path_max_deviation": 0.09244407892440651,
+        "pitch_dtw_distance_normalized": 73.0511566636805,
+        "pitch_dtw_distance_total": 369565.80156155967,
+        "dtw_warp_path_length": 5059,
+        "vocal_stability_std": 82.21623154359573,
+        "voiced_aligned_frames": 2790
+      },
+      "files": {
+        "summary_json": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/02_20260409_004900_09_04_26_00.49-1/summary.json",
+        "pitch_alignment_html": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/02_20260409_004900_09_04_26_00.49-1/pitch_alignment.html"
+      },
+      "delta_vs_previous": {
+        "pitch_score": 39.582186925246745,
+        "timing_score": 8.857420881429334,
+        "avg_abs_cents": -35.62396823272207,
+        "vocal_stability_std": -27.708948409076996
+      }
+    },
+    {
+      "attempt_index": 3,
+      "take_name": "09:04:26, 00.49-2.wav",
+      "user_path": "/Users/stefanoroybisignano/Music/GarageBand/Eyes Without A Face - Verse/MyVerse01/09:04:26, 00.49-2.wav",
+      "attempt_time_local": "2026-04-09T00:49:00+02:00",
+      "attempt_time_utc": "2026-04-08T22:49:00+00:00",
+      "attempt_time_source": "filename",
+      "file_mtime_local": "2026-04-09T00:59:07.210132+02:00",
+      "file_mtime_utc": "2026-04-08T22:59:07.210132+00:00",
+      "status": "success",
+      "output_dir": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/03_20260409_004900_09_04_26_00.49-2",
+      "metrics": {
+        "pitch_score": 44.635048772283895,
+        "avg_abs_cents": 59.82845610494449,
+        "timing_score": 89.46059746723178,
+        "warping_path_mean_deviation": 0.07325594494608507,
+        "warping_path_rms_deviation": 0.10539402532768231,
+        "warping_path_max_deviation": 0.2654733960428649,
+        "pitch_dtw_distance_normalized": 78.84373833355,
+        "pitch_dtw_distance_total": 406439.4711094502,
+        "dtw_warp_path_length": 5155,
+        "vocal_stability_std": 63.614515116268905,
+        "voiced_aligned_frames": 2973
+      },
+      "files": {
+        "summary_json": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/03_20260409_004900_09_04_26_00.49-2/summary.json",
+        "pitch_alignment_html": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/03_20260409_004900_09_04_26_00.49-2/pitch_alignment.html"
+      },
+      "delta_vs_previous": {
+        "pitch_score": -13.453362219352911,
+        "timing_score": -7.513239960416641,
+        "avg_abs_cents": 12.10802599741762,
+        "vocal_stability_std": -18.60171642732682
+      }
+    },
+    {
+      "attempt_index": 4,
+      "take_name": "09:04:26, 00.49-3.wav",
+      "user_path": "/Users/stefanoroybisignano/Music/GarageBand/Eyes Without A Face - Verse/MyVerse01/09:04:26, 00.49-3.wav",
+      "attempt_time_local": "2026-04-09T00:49:00+02:00",
+      "attempt_time_utc": "2026-04-08T22:49:00+00:00",
+      "attempt_time_source": "filename",
+      "file_mtime_local": "2026-04-09T01:36:22.904791+02:00",
+      "file_mtime_utc": "2026-04-08T23:36:22.904791+00:00",
+      "status": "success",
+      "output_dir": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/04_20260409_004900_09_04_26_00.49-3",
+      "metrics": {
+        "pitch_score": 58.38023432798841,
+        "avg_abs_cents": 47.45778910481043,
+        "timing_score": 97.1536616846521,
+        "warping_path_mean_deviation": 0.020557994060016783,
+        "warping_path_rms_deviation": 0.028463383153478974,
+        "warping_path_max_deviation": 0.08735497389641186,
+        "pitch_dtw_distance_normalized": 59.32318343894599,
+        "pitch_dtw_distance_total": 297327.7953959973,
+        "dtw_warp_path_length": 5012,
+        "vocal_stability_std": 67.6098296845863,
+        "voiced_aligned_frames": 3139
+      },
+      "files": {
+        "summary_json": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/04_20260409_004900_09_04_26_00.49-3/summary.json",
+        "pitch_alignment_html": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/takes/04_20260409_004900_09_04_26_00.49-3/pitch_alignment.html"
+      },
+      "delta_vs_previous": {
+        "pitch_score": 13.745185555704516,
+        "timing_score": 7.6930642174203285,
+        "avg_abs_cents": -12.370667000134063,
+        "vocal_stability_std": 3.995314568317397
+      }
+    }
+  ],
+  "files": {
+    "performance_history_json": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/performance_history.json",
+    "performance_trend_html": "/Users/stefanoroybisignano/Desktop/Singing/VocalAnalyzer/outputs/Eyes Without A Face/Verse01/performance_trend.html"
+  },
+  "successful_attempts": 4,
+  "failed_attempts": 0,
+  "trend_overview": {
+    "pitch_score_delta_first_to_last": 39.87401026159835,
+    "timing_score_delta_first_to_last": 9.037245138433022,
+    "avg_abs_cents_delta_first_to_last": -35.88660923543851,
+    "vocal_stability_std_delta_first_to_last": -42.31535026808642
+  }
+}
